@@ -16,7 +16,15 @@ This is a python script which parses 9gag.com using BeautifulSoup and display it
  3) Run the main file
   
   		python main.py
+        
+  
+**Featured to be implemented**
 
+1)Image support
+
+2)GIF support
+
+3)Top Comments
 
     
  
