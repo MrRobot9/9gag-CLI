@@ -4,6 +4,9 @@ This is a python script which parses 9gag.com using BeautifulSoup and display it
 
 **Instructions**
 
-1)Clone the template project, replacing my-project with the name of the project you are creating:
+1)Clone the project:
     
-    https://github.com/MrRobot9/9my-project.git
+         git clone https://github.com/MrRobot9/python-project-template.git my-project
+         cd my-project
+    
+ 
