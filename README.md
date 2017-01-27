@@ -1,6 +1,5 @@
 # 9gag-CLI
 
+This is a python script which parses 9gag.com using BeautifulSoup and display it in terminal window.
 
-You can browse 9gag in your terminal now
-
-Instructions
+**Instructions**
