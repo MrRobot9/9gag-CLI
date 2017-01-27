@@ -80,7 +80,7 @@ def annotate(number_of_pages, page_type):
     })
   return final_result
 
-def get_posts_from_page(number_of_pages = 1, media_type = 'all', page_type = None, more_votes_than = 0, more_comments_than = 0):
+def get_posts_from_page(number_of_pages = 2, media_type = 'all', page_type = None, more_votes_than = 0, more_comments_than = 0):
   data = annotate(number_of_pages, page_type)
   if media_type == 'gif':
     data = [el for el in data if el['type'] == 'GIF']
@@ -92,5 +92,5 @@ def get_posts_from_page(number_of_pages = 1, media_type = 'all', page_type = Non
     data = [el for el in data if el['votes'] > more_votes_than]
   if more_comments_than > 0:
     data = [el for el in data if el['comments'] > more_comments_than]
-  #print(json.dumps(data))
-  return json.dumps(data)
+  jsonData = json.loads(json.dumps(data));
+  return jsonData
