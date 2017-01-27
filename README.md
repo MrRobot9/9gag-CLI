@@ -12,6 +12,8 @@ This is a python script which parses 9gag.com using BeautifulSoup and display it
 2)Install the project's development and runtime requirements:
 
 		pip install -r requirements-dev.txt
+        
+ 3)
 
 
     
