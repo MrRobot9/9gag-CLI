@@ -1,9 +1,11 @@
 from __future__ import print_function
-from api import *
 from parser import *
 from utils import *
 import getpass
 import title9gag
+import stdgif 
+from moviepy.editor import *
+
 
 
 
@@ -18,7 +20,12 @@ if __name__ == "__main__":
     		print("*", end="")
     	print(post['title'])
     	if post['type']=='Image':
-    		img_parse(post['media_url'], True)
+    		img_parse(post['media_url'],True)
+    	else:
+    		print(post['media_url'])
+    		clip = (VideoFileClip(post['media_url']).resize(0.3))
+        	clip.write_gif("example.gif")
+			
 
 
 	

@@ -57,11 +57,14 @@ def retrieve_articles(number_of_pages, page_type):
  
 def annotate(number_of_pages, page_type):
   final_result = list()
+  index = 0
   for ii in retrieve_articles(number_of_pages, page_type):
     #TODO : Make the dictionary by getting other elements out. 
+    #print (ii)
     try:
-      type = ii.find('span', attrs = {'class' : 'play badge-gif-play hide'}).text
-      media_url = ii.find('img', attrs = {'class' : 'badge-item-animated-img'})['src'] 
+      type = 'GIF'
+      media_url = ii.find('div', attrs = {'class' : 'badge-animated-container-animated'})['data-mp4'] 
+      #print("tfttft "+type)
     except:
       type = 'Image'
       media_url = ii.find('img', attrs = {'class' : 'badge-item-img'})['src']
